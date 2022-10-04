@@ -43,3 +43,19 @@ function generatePassword() {
     var symbols = " !#$%&()*+,-./:;<=>?@[\]^_`{|}~";
     characters += symbols;
   }
+
+    //should generate the password using length added by user and what strings they confirmed
+    for (var i = 0; i <= length; ++i) {
+        var randomNumber = Math.floor(Math.random() * characters.length);
+        password += characters.substring(randomNumber, randomNumber +1);    
+      }      
+      return password;
+    }
+    function writePassword() {
+      
+      
+      var passwordText = document.querySelector("#password");
+      
+      passwordText.value = generatePassword();
+      
+    }
