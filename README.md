@@ -1,6 +1,6 @@
 # passwordGen
 
-##Usage
+## Usage
 
 this application is to help a user to produce a password following a set criteria and be random to add some security. This project was done mainly in Javascript using function and if statements along with an event listner to activate the program.
 
