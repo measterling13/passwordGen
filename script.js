@@ -27,3 +27,19 @@ function generatePassword() {
       var alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       characters += alpha;      
     }
+    //prompt if they want or dont want numbers
+  
+  var digits = window.confirm("Would you like numbers included.");
+  
+  if (digits === true) {
+    var numbers = "1234567890";
+    characters += numbers;      
+  }
+  //prompt if they want or dont want symbols
+  
+  var funky =window.confirm("Would you like symbols included.");
+  
+  if (funky === true) {
+    var symbols = " !#$%&()*+,-./:;<=>?@[\]^_`{|}~";
+    characters += symbols;
+  }
